@@ -3,7 +3,7 @@
 import getopt
 import sys
 
-from pythales.hsm import HSM
+from ..pythales.hsm import HSM
 
 def show_help(name):
     """
