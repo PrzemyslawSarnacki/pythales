@@ -474,7 +474,7 @@ class HSM():
         """
         """
         data = self.conn.recv(4096)
-        data = str2bytes(data)
+        data = data.encode()
         if len(data):
             trace('<< {} bytes received from {}: '.format(len(data), client_name), data)
             return data
