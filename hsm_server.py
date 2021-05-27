@@ -3,7 +3,7 @@
 import getopt
 import sys
 
-from ..pythales.hsm import HSM
+from pythales.hsm import HSM
 
 def show_help(name):
     """
@@ -49,5 +49,5 @@ if __name__ == '__main__':
             show_help(sys.argv[0])
             sys.exit()
 
-    hsm = HSM(port=port, header=header, key=key, debug=debug, skip_parity=skip_parity, approve_all=approve_all)
-    hsm.run()
+    # hsm = HSM(port=port, header=header, key=key, debug=debug, skip_parity=skip_parity, approve_all=approve_all)
+    # hsm.run()
